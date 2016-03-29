@@ -11,7 +11,7 @@ class DigitalDisplayWorkstation extends Base {
 		return this.subscribe('digital-display.command', (event) => {
 			console.log('<DD> new command:', event);
 			let event_data = event.data;
-			this.emit('command', new Buffer(event_data, 'hex'));
+			this.emit('command', new Buffer(event_data.data, 'hex'));
 		})
 	}
 }
