@@ -1,0 +1,26 @@
+{
+  "name": "iris-nodemon-digital-display",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/demon/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdk-group/iris-nodemon-digital-display.git"
+  },
+  "keywords": [
+    "node",
+    "demon",
+    "digital",
+    "display",
+    "iris"
+  ],
+  "author": "SS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sdk-group/iris-nodemon-digital-display/issues"
+  },
+  "homepage": "https://github.com/sdk-group/iris-nodemon-digital-display#readme"
+}
