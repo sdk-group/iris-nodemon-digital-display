@@ -4,7 +4,6 @@ const workstation_type = 'digital-display';
 let SerialPort = require("serialport").SerialPort;
 
 let User = require('./classes/User.js');
-
 let dd = new User(workstation_type);
 
 let login = 'dd';

@@ -1,9 +1,6 @@
 'use strict'
 
-let storage = {
-	api_server: '192.168.1.37',
-	api_port: "9000"
-};
+let storage = {};
 
 class Settings {
 	static getItem(name) {
