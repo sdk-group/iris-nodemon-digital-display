@@ -2,6 +2,7 @@
 const workstation_type = 'digital-display';
 
 let SerialPort = require("serialport").SerialPort;
+let Settings = require('./classes/Settings.js');
 
 let User = require('./classes/User.js');
 let dd = new User(workstation_type);
@@ -14,7 +15,7 @@ dd.login(login, password).then(() => {
 
 	let ws = dd.getWorkstation(workstation_type);
 
-	let port = new SerialPort(ws.port, {
+	let port = new SerialPort(Settings.getItem('serial_port'), {
 		baudRate: ws.baund_rate,
 		dataBits: ws.data_bits,
 		parity: ws.parity,
