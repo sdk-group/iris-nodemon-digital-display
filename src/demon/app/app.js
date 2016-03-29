@@ -14,12 +14,13 @@ dd.login(login, password).then(() => {
 	console.log('connection complete');
 
 	let ws = dd.getWorkstation(workstation_type);
+	let fields = ws.fields;
 
 	let port = new SerialPort(Settings.getItem('serial_port'), {
-		baudRate: ws.baund_rate,
-		dataBits: ws.data_bits,
-		parity: ws.parity,
-		stopBits: ws.stop_bits
+		baudRate: fields.baud_rate,
+		dataBits: fields.data_bits,
+		parity: fields.parity,
+		stopBits: fields.stop_bits
 	});
 
 	port.on('data', function (data) {
