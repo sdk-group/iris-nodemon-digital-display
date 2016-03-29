@@ -41,7 +41,6 @@ dd.login(login, password).then(() => {
 			port.write(command,
 				function (res) {
 					console.log("RESPONSE", res);
-					done();
 				});
 		});
 	});
