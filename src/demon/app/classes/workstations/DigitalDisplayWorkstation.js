@@ -5,7 +5,6 @@ let Base = require('./BaseWorkstation.js');
 class DigitalDisplayWorkstation extends Base {
 	constructor(user) {
 		super(user, 'digital-display');
-		this.request_shared = ['timezone', 'office', 'services', 'organization-chain'];
 	}
 	middleware() {
 		return this.subscribe({
